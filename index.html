@@ -7,16 +7,15 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="/.js"></script>
 <html>
   <body>
     <div align='center'>
-      
+      <form method="post" enctype="multipart/form-data" action="/file-upload" name="upload">
       <h1>Upload a file</h1>
-      <input type="file" id="fileUpload"></input>
+      <input type="file" name="file"></input>
       <h2>View its Metadata</h2>
-      <button id="submit">submit</button>
-      
+      <button type="submit" value="submit" id="submit">submit</button>
+      </form>
     </div>
     
   </body>
